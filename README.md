@@ -1,30 +1,33 @@
-# GhostSpeak CLI (Go)
+# Boo 👻
 
-**Official Go TUI for GhostSpeak** • Built with [Charm](https://charm.sh) 🌟
+**The Beautiful TUI for GhostSpeak** • Built with [Charm](https://charm.sh) 🌟
 
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)](https://golang.org)
 [![Charm](https://img.shields.io/badge/Charm-Bubbletea-5A56E0?style=flat)](https://github.com/charmbracelet/bubbletea)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-A powerful Terminal User Interface (TUI) for **GhostSpeak** - the trust and reputation layer for AI agents on Solana. Built with Go and [Charm's Bubbletea](https://github.com/charmbracelet/bubbletea) for a delightful command-line experience.
+**Boo** is a powerful Terminal User Interface (TUI) for **[GhostSpeak](https://github.com/ghostspeak/ghostspeak)** - the trust and reputation layer for AI agents on Solana. Built with Go and [Charm's Bubbletea](https://github.com/charmbracelet/bubbletea) for a delightful command-line experience.
 
-**GhostSpeak provides:**
+**What is GhostSpeak?**
 - 🏆 **Ghost Score** - FICO-style credit scoring for AI agents (0-1000)
 - 📜 **Verifiable Credentials** - W3C-compliant credentials on-chain
 - 🆔 **Decentralized Identity** - DID infrastructure for agent identities
 - 🔒 **GHOST Token Staking** - Stake to boost reputation and earn rewards
 
-```
-  ██████╗ ██╗  ██╗ ██████╗ ███████╗████████╗███████╗██████╗ ███████╗ █████╗ ██╗  ██╗
- ██╔════╝ ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝██╔════╝██╔══██╗██╔════╝██╔══██╗██║ ██╔╝
- ██║  ███╗███████║██║   ██║███████╗   ██║   ███████╗██████╔╝█████╗  ███████║█████╔╝
- ██║   ██║██╔══██║██║   ██║╚════██║   ██║   ╚════██║██╔═══╝ ██╔══╝  ██╔══██║██╔═██╗
- ╚██████╔╝██║  ██║╚██████╔╝███████║   ██║   ███████║██║     ███████╗██║  ██║██║  ██╗
-  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+**What is Boo?**
+Boo is the terminal interface that brings GhostSpeak's power to your command line. Manage agents, wallets, credentials, staking, and governance—all from a beautiful, responsive TUI.
 
-                         Trust & Reputation Layer for AI Agents
-                              TUI v1.0.0 | SDK v2.0.4
+```
+ ██████╗  ██████╗  ██████╗ ██╗
+ ██╔══██╗██╔═══██╗██╔═══██╗██║
+ ██████╔╝██║   ██║██║   ██║██║
+ ██╔══██╗██║   ██║██║   ██║╚═╝
+ ██████╔╝╚██████╔╝╚██████╔╝██╗
+ ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  👻
+
+        Trust Layer TUI for GhostSpeak
+              v1.0.0 | Built with Charm
 ```
 
 ## 🚀 Features
@@ -50,37 +53,82 @@ A powerful Terminal User Interface (TUI) for **GhostSpeak** - the trust and repu
 
 ## ✨ Built with Charm
 
-This CLI is built with [Charm](https://charm.sh)'s exceptional TUI ecosystem, providing a delightful terminal experience:
+Boo leverages [Charm](https://charm.sh)'s exceptional TUI ecosystem to create a delightful terminal experience. Here's what makes Boo beautiful:
 
-### 🫧 [Bubbletea](https://github.com/charmbracelet/bubbletea)
-The Elm-inspired framework powering our interactive TUI. Enjoy smooth, reactive interfaces with:
-- **Interactive dashboards** for Ghost Score analytics
-- **Live agent management** with real-time updates
-- **Form wizards** for agent registration and configuration
-- **Modal dialogs** for confirmations and detailed views
+### 🫧 [Bubbletea](https://github.com/charmbracelet/bubbletea) - The TUI Framework
+The Elm Architecture-inspired framework powering Boo's reactive interfaces:
+- **Model-View-Update Pattern** - Predictable state management for complex UIs
+- **Cross-Platform** - Works perfectly on macOS, Linux, and Windows
+- **Mouse & Keyboard Events** - Full support for interactive navigation
+- **Async Operations** - Non-blocking I/O via Commands for smooth UX
+- **Alternate Screen Buffer** - Full-screen TUI without disrupting your terminal
 
-### 💄 [Lipgloss](https://github.com/charmbracelet/lipgloss)
-Beautiful styling and layouts make data visualization a pleasure:
-- **Color-coded tiers** (Bronze, Silver, Gold, Platinum)
-- **Gradient effects** for reputation scores
-- **Responsive tables** that adapt to terminal width
-- **Custom themes** matching GhostSpeak branding
+**In Boo:**
+- Interactive dashboards with real-time Ghost Score analytics
+- Live agent management with instant updates
+- Form wizards guiding you through agent registration
+- Modal dialogs for transaction confirmations
 
-### 🫧 [Bubbles](https://github.com/charmbracelet/bubbles)
-Pre-built components for common interactions:
-- **Spinners** for transaction confirmations
-- **Progress bars** for staking operations
-- **Text inputs** with validation
-- **Lists and tables** for browsing agents
+### 💄 [Lipgloss](https://github.com/charmbracelet/lipgloss) - Styling & Layouts
+CSS-like styling for beautiful terminal output:
+- **Rich Colors** - 16-bit, 256-color, and TrueColor support with automatic degradation
+- **Flexible Layouts** - Padding, margins, borders (normal/rounded/thick/custom)
+- **Text Formatting** - Bold, italic, underline, strikethrough, blink effects
+- **Adaptive Colors** - Automatically adjust for light/dark terminal backgrounds
+- **Responsive** - Tables and lists adapt to your terminal width
+
+**In Boo:**
+- Color-coded reputation tiers (Bronze 🥉, Silver 🥈, Gold 🥇, Platinum 💎)
+- Gradient effects highlighting Ghost Score progression
+- Custom GhostSpeak theme with signature yellow (#FEF9A7) accents
+- Beautifully formatted tables for agent listings and staking stats
+
+### 🫧 [Bubbles](https://github.com/charmbracelet/bubbles) - Pre-Built Components
+Ready-to-use TUI components for common patterns:
+- **TextInput & TextArea** - Validated input fields with autocomplete
+- **Viewport** - Scrollable content for logs and large text blocks
+- **List** - Interactive, filterable lists with pagination
+- **Table** - Data tables with sorting and selection
+- **Progress & Spinner** - Visual feedback for operations
+- **FilePicker** - Navigate and select files from the filesystem
+- **Timer & Stopwatch** - Time tracking components
+
+**In Boo:**
+- Spinners during blockchain transaction submissions
+- Progress bars showing staking operation status
+- Text inputs with validation for wallet addresses
+- Interactive lists for browsing agents, credentials, and DIDs
+- Tables displaying staking tiers and governance proposals
+
+### 🎭 [Huh](https://github.com/charmbracelet/huh) - Forms & Prompts
+Interactive forms that make complex input delightful:
+- **Multi-Step Forms** - Wizard-like flows for complex operations
+- **Field Types** - Text, select, multi-select, confirm, file picker, notes
+- **Dynamic Forms** - Fields that change based on previous inputs
+- **Validation** - Built-in field validation and error handling
+- **Accessible Mode** - Screen reader-friendly prompts
+
+**In Boo:**
+- Agent registration wizard (name, type, capabilities, metadata)
+- Wallet creation flow with password confirmation
+- Staking amount selector with tier preview
+- Governance proposal creation with dynamic validation
 
 ### 🪄 Try the TUI
 
-Launch the interactive Terminal UI with:
+Experience Boo's full interactive mode:
 ```bash
 boo tui
 ```
 
 Navigate through dashboards, manage agents, view credentials, and stake GHOST tokens—all from your terminal!
+
+Or use individual commands for quick operations:
+```bash
+boo agent list              # Quick agent overview
+boo reputation leaderboard  # See top performers
+boo staking stats           # View global staking data
+```
 
 ## 📦 Installation
 
@@ -93,7 +141,7 @@ Navigate through dashboards, manage agents, view credentials, and stake GHOST to
 
 ```bash
 # Download latest release (coming soon)
-curl -sL https://github.com/ghostspeak/boo-go/releases/latest/download/boo-$(uname -s)-$(uname -m) -o boo
+curl -sL https://github.com/Ghostspeak/boo/releases/latest/download/boo-$(uname -s)-$(uname -m) -o boo
 chmod +x boo
 sudo mv boo /usr/local/bin/
 ```
@@ -102,8 +150,8 @@ sudo mv boo /usr/local/bin/
 
 ```bash
 # Clone the repository
-git clone https://github.com/ghostspeak/boo-go.git
-cd ghost-go
+git clone https://github.com/Ghostspeak/boo.git
+cd boo
 
 # Download dependencies
 go mod download
@@ -342,7 +390,7 @@ export GHOSTSPEAK_LOG_LEVEL=debug
 ### Project Structure
 
 ```
-ghost-go/
+boo/
 ├── cmd/                    # CLI commands (Cobra)
 │   ├── root.go            # Root command & global flags
 │   ├── agent.go           # Agent management commands
@@ -496,7 +544,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Website:** https://ghostspeak.ai
 - **Documentation:** https://docs.ghostspeak.ai
 - **Main Repo:** https://github.com/ghostspeak/ghostspeak
-- **Issues:** https://github.com/ghostspeak/boo-go/issues
+- **Issues:** https://github.com/Ghostspeak/boo/issues
 - **Discord:** https://discord.gg/ghostspeak
 
 ## 🙏 Acknowledgments
